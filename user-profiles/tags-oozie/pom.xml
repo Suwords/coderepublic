@@ -28,8 +28,8 @@
         </repository>
     </repositories>
     <properties>
-        <hadoop.version>2.6.0-cdh5.14.0</hadoop.version>
-        <oozie.version>4.1.0-cdh5.14.0</oozie.version>
+        <hadoop.version>3.0.0-cdh6.3.2</hadoop.version>
+        <oozie.version>5.1.0-cdh6.3.2</oozie.version>
     </properties>
     <dependencies>
         <!-- Hadoop Client 依赖 -->

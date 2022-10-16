@@ -30,11 +30,11 @@
     <properties>
         <scala.version>2.11.8</scala.version>
         <scala.binary.version>2.11</scala.binary.version>
-        <spark.version>2.2.0</spark.version>
-        <hadoop.version>2.6.0-cdh5.14.0</hadoop.version>
-        <hbase.version>1.2.0-cdh5.14.0</hbase.version>
-        <zookeeper.version>3.4.5-cdh5.14.0</zookeeper.version>
-        <oozie.version>4.1.0-cdh5.14.0</oozie.version>
+        <spark.version>2.4.0</spark.version>
+        <hadoop.version>3.0.0-cdh6.3.2</hadoop.version>
+        <hbase.version>2.1.0-cdh6.3.2</hbase.version>
+        <zookeeper.version>3.4.5-cdh6.3.2</zookeeper.version>
+        <oozie.version>5.1.0-cdh6.3.2</oozie.version>
     </properties>
     <dependencies>
         <!-- 依赖Scala语言 -->
@@ -44,22 +44,22 @@
             <version>${scala.version}</version>
         </dependency>
         <!-- Spark Core 依赖 -->
-        <dependency>
-            <groupId>org.apache.spark</groupId>
-            <artifactId>spark-core_${scala.binary.version}</artifactId>
-            <version>${spark.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.spark</groupId>-->
+<!--            <artifactId>spark-core_${scala.binary.version}</artifactId>-->
+<!--            <version>${spark.version}</version>-->
+<!--        </dependency>-->
         <!-- Spark SQL 依赖 -->
-        <dependency>
-            <groupId>org.apache.spark</groupId>
-            <artifactId>spark-sql_${scala.binary.version}</artifactId>
-            <version>${spark.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.spark</groupId>
-            <artifactId>spark-sql-kafka-0-10_${scala.binary.version} </artifactId>
-            <version>${spark.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.spark</groupId>-->
+<!--            <artifactId>spark-sql_${scala.binary.version}</artifactId>-->
+<!--            <version>${spark.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.spark</groupId>-->
+<!--            <artifactId>spark-sql-kafka-0-10_${scala.binary.version} </artifactId>-->
+<!--            <version>${spark.version}</version>-->
+<!--        </dependency>-->
         <!-- Hadoop Client 依赖 -->
         <dependency>
             <groupId>org.apache.hadoop</groupId>
@@ -67,26 +67,26 @@
             <version>${hadoop.version}</version>
         </dependency>
         <!-- HBase Client 依赖 -->
-        <dependency>
-            <groupId>org.apache.hbase</groupId>
-            <artifactId>hbase-server</artifactId>
-            <version>${hbase.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.hbase</groupId>
-            <artifactId>hbase-hadoop2-compat</artifactId>
-            <version>${hbase.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.hbase</groupId>-->
+<!--            <artifactId>hbase-server</artifactId>-->
+<!--            <version>${hbase.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.hbase</groupId>-->
+<!--            <artifactId>hbase-hadoop2-compat</artifactId>-->
+<!--            <version>${hbase.version}</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-client</artifactId>
             <version>${hbase.version}</version>
         </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.48</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>mysql</groupId>-->
+<!--            <artifactId>mysql-connector-java</artifactId>-->
+<!--            <version>5.1.48</version>-->
+<!--        </dependency>-->
     </dependencies>
     <build>
         <outputDirectory>target/classes</outputDirectory>
@@ -107,19 +107,6 @@
                     <target>1.8</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>net.alchim31.maven</groupId>
-                <artifactId>scala-maven-plugin</artifactId>
-                <version>3.2.0</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>compile</goal>
-                            <goal>testCompile</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>

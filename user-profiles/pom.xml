@@ -12,7 +12,6 @@
         <module>tags-etl</module>
         <module>tags-oozie</module>
         <module>tags-up</module>
-        <module>tags-web</module>
     </modules>
 
 

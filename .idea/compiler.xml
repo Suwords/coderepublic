@@ -7,14 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="tags-etl" />
+        <module name="scala" />
         <module name="tags-up" />
         <module name="tags-oozie" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="tags-etl" target="1.5" />
-      <module name="tags-oozie" target="1.5" />
-      <module name="tags-up" target="1.5" />
+      <module name="scala" target="8" />
+      <module name="tags-etl" target="1.8" />
+      <module name="tags-oozie" target="1.8" />
+      <module name="tags-up" target="1.8" />
       <module name="tags-web" target="1.5" />
       <module name="user-profiles" target="1.5" />
     </bytecodeTargetLevel>
