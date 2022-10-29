@@ -6,10 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="tags-etl" />
         <module name="scala" />
-        <module name="tags-up" />
-        <module name="tags-oozie" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

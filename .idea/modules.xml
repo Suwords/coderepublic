@@ -3,11 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/scala/scala.iml" filepath="$PROJECT_DIR$/scala/scala.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user-profiles/tags-etl/tags-etl.iml" filepath="$PROJECT_DIR$/user-profiles/tags-etl/tags-etl.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user-profiles/tags-oozie/tags-oozie.iml" filepath="$PROJECT_DIR$/user-profiles/tags-oozie/tags-oozie.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user-profiles/tags-up/tags-up.iml" filepath="$PROJECT_DIR$/user-profiles/tags-up/tags-up.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/the-god-road-for-bigdata.iml" filepath="$PROJECT_DIR$/.idea/the-god-road-for-bigdata.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user-profiles/user-profiles.iml" filepath="$PROJECT_DIR$/user-profiles/user-profiles.iml" />
     </modules>
   </component>
 </project>
