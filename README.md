@@ -1,5 +1,7 @@
 # the god road for bigdata
 
+[![Join the chat at https://gitter.im/Suwords/coderepublic](https://badges.gitter.im/Suwords/coderepublic.svg)](https://gitter.im/Suwords/coderepublic?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 #### 介绍
 编程理想国
 
