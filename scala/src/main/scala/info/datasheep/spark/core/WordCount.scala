@@ -1,4 +1,4 @@
-package info.datasheep.spark
+package info.datasheep.spark.core
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
@@ -25,7 +25,9 @@ object WordCount {
 
     result.foreach(println)
 
-    result.map((x) => {(x._2, 1)}).reduceByKey(_ + _).foreach(println)
+    result.map((x) => {
+      (x._2, 1)
+    }).reduceByKey(_ + _).foreach(println)
 
     //Thread.sleep(Integer.MAX_VALUE)
   }

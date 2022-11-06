@@ -1,4 +1,4 @@
-package info.datasheep.spark
+package info.datasheep.spark.core
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
@@ -33,7 +33,7 @@ object lesson04_rdd_partitions {
 
     val res02: RDD[String] = data.mapPartitionsWithIndex(
       (pindex, piter) => {
-        val lb = new ListBuffer[String]  // 致命的！！！ 根据之前的源码发现 Spark就是一个pipeline，迭代器嵌套的模式
+        val lb = new ListBuffer[String] // 致命的！！！ 根据之前的源码发现 Spark就是一个pipeline，迭代器嵌套的模式
         // 数据不会在内存中积压
         println(s"----$pindex---conn--mysql-----")
         while (piter.hasNext) {

@@ -1,4 +1,4 @@
-package info.datasheep.spark
+package info.datasheep.spark.core
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
@@ -46,7 +46,7 @@ object lesson02_rdd_api_sort {
     val uv: Array[(String, Int)] = sort.take(5)
     uv.foreach(println)
 
-    while (true){
+    while (true) {
 
     }
 

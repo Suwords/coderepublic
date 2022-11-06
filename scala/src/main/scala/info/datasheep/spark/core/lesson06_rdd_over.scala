@@ -1,4 +1,4 @@
-package info.datasheep.spark
+package info.datasheep.spark.core
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
@@ -30,8 +30,8 @@ object lesson06_rdd_over {
     })
 
     implicit val sdfsdf = new Ordering[(Int, Int)] {
-                    override def compare(x: (Int, Int), y: (Int, Int)) = y._2.compareTo(x._2)
-                  }
+      override def compare(x: (Int, Int), y: (Int, Int)) = y._2.compareTo(x._2)
+    }
     // 第一代
     // 用来groupByKey 容易OOM 且自己的算子实现了函数：去重、排序
     val grouped: RDD[((Int, Int), Iterable[(Int, Int)])] = data.map(t4 => ((t4._1, t4._2), (t4._3, t4._4))).groupByKey()
@@ -96,7 +96,7 @@ object lesson06_rdd_over {
           if (oldv(i)._1 == newv._1) {
             if (oldv(i)._2 < newv._2) {
               flg = 1
-              oldv(i) = newv  // ((1, 40), (0, 0))
+              oldv(i) = newv // ((1, 40), (0, 0))
             }
           }
         }
@@ -129,10 +129,10 @@ object lesson06_rdd_over {
       "hello world"
     ))
     val words: RDD[String] = data1.flatMap(_.split(" "))
-    val kv1: RDD[(String, Int)] = words.map((_,1))
-    val res1: RDD[(String, Int)] = kv1.reduceByKey(_+_)
-    val res001: RDD[(String, Int)] = res1.map(x=>(x._1, x._2 * 10))
-//    val res001: RDD[(String, Int)] = res1.mapValues(x=>x*10)
+    val kv1: RDD[(String, Int)] = words.map((_, 1))
+    val res1: RDD[(String, Int)] = kv1.reduceByKey(_ + _)
+    val res001: RDD[(String, Int)] = res1.map(x => (x._1, x._2 * 10))
+    //    val res001: RDD[(String, Int)] = res1.mapValues(x=>x*10)
     val res002: RDD[(String, Iterable[Int])] = res001.groupByKey()
     res002.foreach(println)
 

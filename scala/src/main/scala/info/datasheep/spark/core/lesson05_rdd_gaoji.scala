@@ -1,4 +1,4 @@
-package info.datasheep.spark
+package info.datasheep.spark.core
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}

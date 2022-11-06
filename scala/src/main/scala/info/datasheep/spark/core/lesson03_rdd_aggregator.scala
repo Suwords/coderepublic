@@ -1,4 +1,4 @@
-package info.datasheep.spark
+package info.datasheep.spark.core
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
@@ -73,7 +73,7 @@ object lesson03_rdd_aggregator {
       (v1: (Int, Int), v2: (Int, Int)) => (v1._1 + v2._1, v1._2 + v2._2)
     )
 
-    tmp.mapValues(e=> e._1/e._2).foreach(println)
+    tmp.mapValues(e => e._1 / e._2).foreach(println)
   }
 
 }

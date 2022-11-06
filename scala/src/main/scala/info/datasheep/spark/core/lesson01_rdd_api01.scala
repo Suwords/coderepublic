@@ -1,9 +1,7 @@
-package info.datasheep.spark
+package info.datasheep.spark.core
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
-
-import java.io
 
 /**
  * @description:
@@ -28,7 +26,7 @@ object lesson01_rdd_api01 {
     println("============*. 带函数的非聚合操作 ==========")
     dataRDD.map(_ * 2).foreach(println)
     println("-----------------------")
-    dataRDD.flatMap(List(_,1)).foreach(println)
+    dataRDD.flatMap(List(_, 1)).foreach(println)
     println("-----------------------")
     dataRDD.filter(_ > 3).foreach(println)
     println("-----------------------")
@@ -114,7 +112,7 @@ object lesson01_rdd_api01 {
     val fullRDD: RDD[(String, (Option[Int], Option[Int]))] = kv1.fullOuterJoin(kv2)
     fullRDD.foreach(println)
 
-    while(true) {
+    while (true) {
 
     }
   }
