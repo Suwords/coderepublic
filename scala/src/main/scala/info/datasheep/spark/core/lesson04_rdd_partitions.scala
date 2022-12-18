@@ -16,7 +16,7 @@ object lesson04_rdd_partitions {
     val sc = new SparkContext(sparkConf)
     sc.setLogLevel("ERROR")
 
-    val data: RDD[Int] = sc.parallelize(1 to 10, 2)
+    val data: RDD[Int] = sc.parallelize(1 to 5, 2)
 
     // 外关联 SQL查询
     val res01: RDD[String] = data.map(
