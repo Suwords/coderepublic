@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/user-profiles/pom.xml" />
         <option value="$PROJECT_DIR$/scala/pom.xml" />
+        <option value="$PROJECT_DIR$/flink-warehouse/pom.xml" />
       </list>
     </option>
   </component>
