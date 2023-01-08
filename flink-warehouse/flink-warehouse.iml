@@ -207,5 +207,6 @@
     <orderEntry type="library" name="Maven: org.apache.flink:flink-table-api-scala_2.11:1.13.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.flink:flink-table-common:1.13.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.flink:flink-connector-files:1.13.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.flink:flink-cep_2.11:1.13.2" level="project" />
   </component>
 </module>
