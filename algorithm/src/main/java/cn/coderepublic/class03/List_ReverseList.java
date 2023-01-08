@@ -1,4 +1,4 @@
-package cn.coderepublic.datastruct;
+package cn.coderepublic.class03;
 
 import java.util.ArrayList;
 import java.util.List;

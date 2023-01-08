@@ -1,4 +1,4 @@
-package cn.coderepublic.binary;
+package cn.coderepublic.class02;
 
 /**
  * @description: 不用额外变量交换两个数

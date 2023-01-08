@@ -1,4 +1,4 @@
-package cn.coderepublic.sort;
+package cn.coderepublic.class01;
 
 /**
  * @description: 局部最小值问题

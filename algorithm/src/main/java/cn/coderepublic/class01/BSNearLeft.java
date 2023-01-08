@@ -1,4 +1,4 @@
-package cn.coderepublic.sort;
+package cn.coderepublic.class01;
 
 import java.util.Arrays;
 

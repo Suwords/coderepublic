@@ -1,4 +1,4 @@
-package cn.coderepublic.datastruct;
+package cn.coderepublic.class03;
 
 /**
  * @description: 递归获取最大值

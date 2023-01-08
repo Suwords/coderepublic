@@ -1,4 +1,4 @@
-package cn.coderepublic.binary;
+package cn.coderepublic.class02;
 
 import java.util.HashMap;
 import java.util.HashSet;

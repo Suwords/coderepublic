@@ -1,4 +1,4 @@
-package cn.coderepublic.datastruct;
+package cn.coderepublic.class03;
 
 /**
  * @description: 删除给定值
