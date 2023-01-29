@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/algorithm/algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-warehouse/flink-warehouse.iml" filepath="$PROJECT_DIR$/flink-warehouse/flink-warehouse.iml" />
       <module fileurl="file://$PROJECT_DIR$/scala/scala.iml" filepath="$PROJECT_DIR$/scala/scala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spark-warehouse/spark-warehouse.iml" filepath="$PROJECT_DIR$/spark-warehouse/spark-warehouse.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/the-god-road-for-bigdata.iml" filepath="$PROJECT_DIR$/.idea/the-god-road-for-bigdata.iml" />
     </modules>
   </component>

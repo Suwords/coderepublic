@@ -17,7 +17,7 @@ object lesson01_sql_basic {
     val session: SparkSession = SparkSession
       .builder()
       .config(conf)
-      // .enableHiveSupport() // 开启这个选项时， spark on hive 才支持DDL，没开启，spark只有Catalog
+      //.enableHiveSupport() // 开启这个选项时， spark on hive 才支持DDL，没开启，spark只有Catalog
       .getOrCreate()
 
     val sc: SparkContext = session.sparkContext
