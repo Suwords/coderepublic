@@ -1,4 +1,4 @@
-package cn.coderepublic.class01;
+package cn.coderepublic.class01.code;
 
 import java.util.Arrays;
 

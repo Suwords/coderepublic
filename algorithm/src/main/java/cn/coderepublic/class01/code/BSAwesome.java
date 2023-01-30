@@ -1,4 +1,4 @@
-package cn.coderepublic.class01;
+package cn.coderepublic.class01.code;
 
 /**
  * @description: 局部最小值问题

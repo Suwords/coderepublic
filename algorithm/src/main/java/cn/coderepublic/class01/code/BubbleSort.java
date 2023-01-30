@@ -1,60 +1,53 @@
-package cn.coderepublic.class01;
+package cn.coderepublic.class01.code;
 
 import java.util.Arrays;
 
 /**
- * @description: 选择排序
+ * @description: 冒泡排序
  * @author: shier
- * @date: 2023/1/4 07:07
+ * @date: 2023/1/4 07:29
  */
-public class SelectionSort {
-    public static void selectionSort(int[] arr) {
+public class BubbleSort {
+    public static void bubbleSort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
         }
 
-        // 0 ~ N-1 找到最小值，在哪，放到0位置上
-        // 1 ~ N-1 找到最小值，在哪，放到1位置上
-        // 2 ~ N-1 找到最小值，在哪，放到2位置上
-        for (int i = 0; i < arr.length - 1; i++) {
-            int minIndex = i;
-            for (int j = i + 1; j < arr.length; j++){ // i ~ N-1 上找最小值的下标
-                minIndex = arr[j] < arr[minIndex] ? j : minIndex;
+        // 0 ~ N-1
+        // 0 ~ N-2
+        // 0 ~ N-3
+        for (int e = arr.length - 1; e > 0; e--){
+            for (int i = 0; i < e; i++) {
+                if (arr[i] > arr[i + 1]) {
+                    swap(arr, i, i + 1);
+                }
             }
-            swap(arr, i, minIndex);
         }
     }
 
     public static void swap(int[] arr, int i, int j) {
-        int tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
+        arr[i] = arr[i] ^ arr[j];
+        arr[j] = arr[i] ^ arr[j];
+        arr[i] = arr[i] ^ arr[j];
     }
 
-    // 对数器函数b
+
     public static void comparator(int[] arr) {
         Arrays.sort(arr);
     }
 
-    // 测试用例生成器
-    public  static int[] generateRandomArray(int maxSize, int maxValue) {
-        // Math.random() [0,1)
-        // Math.random() * N [0,N)
-        // (int)(Math.random() * N) [0,N-1]
+    public static int[] generateRandomArray(int maxSize, int maxValue) {
         int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) ((maxValue + 1) * Math.random()) - (int) (maxValue * Math.random());
         }
-
         return arr;
     }
 
-    // 测试用例复制
     public static int[] copyArray(int[] arr) {
-        if (arr == null){
+        if (arr == null) {
             return null;
         }
-
         int[] res = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
             res[i] = arr[i];
@@ -63,11 +56,11 @@ public class SelectionSort {
         return res;
     }
 
-    // 结果比较
     public static boolean isEqual(int[] arr1, int[] arr2) {
         if ((arr1 == null && arr2 != null) || (arr1 != null && arr2 == null)) {
             return false;
         }
+
         if (arr1 == null && arr2 == null) {
             return true;
         }
@@ -81,14 +74,15 @@ public class SelectionSort {
                 return false;
             }
         }
+
         return true;
     }
 
-    // 打印数组
     public static void printArray(int[] arr) {
         if (arr == null) {
             return;
         }
+
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
@@ -103,20 +97,18 @@ public class SelectionSort {
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = generateRandomArray(maxSize, maxValue);
             int[] arr2 = copyArray(arr1);
-            selectionSort(arr1);
+            bubbleSort(arr1);
             comparator(arr2);
             if (!isEqual(arr1, arr2)) {
                 succeed = false;
-                printArray(arr1);
-                printArray(arr2);
                 break;
             }
         }
-        System.out.println(succeed ? "Nice!" : "Fucking fucked!");
 
+        System.out.println(succeed ? "Nice!" : "Fucking fucked!");
         int[] arr = generateRandomArray(maxSize, maxValue);
         printArray(arr);
-        selectionSort(arr);
+        bubbleSort(arr);
         printArray(arr);
     }
 }
