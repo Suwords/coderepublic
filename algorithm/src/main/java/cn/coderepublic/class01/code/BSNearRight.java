@@ -18,7 +18,7 @@ public class BSNearRight {
                 index = mid;
                 L = mid + 1;
             } else {
-                R = mid + 1;
+                R = mid - 1;
             }
         }
 
