@@ -1,4 +1,4 @@
-package cn.coderepublic.class02;
+package cn.coderepublic.class02.code;
 
 /**
  * @description: arr中，只有一种数，出现奇数次

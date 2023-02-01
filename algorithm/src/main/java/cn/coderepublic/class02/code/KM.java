@@ -1,4 +1,4 @@
-package cn.coderepublic.class02;
+package cn.coderepublic.class02.code;
 
 import java.util.HashMap;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package cn.coderepublic.class02;
+package cn.coderepublic.class02.code;
 
 /**
  * @description: arr中，有两种数，出现奇数次
