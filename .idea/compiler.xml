@@ -8,15 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="flink-warehouse" />
         <module name="spark-warehouse" />
+        <module name="javaSE" />
         <module name="scala" />
         <module name="algorithm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="algorithm" target="8" />
-      <module name="flink-warehouse" target="1.5" />
-      <module name="scala" target="8" />
-      <module name="spark-warehouse" target="8" />
       <module name="tags-etl" target="1.8" />
       <module name="tags-oozie" target="1.8" />
       <module name="tags-up" target="1.8" />
